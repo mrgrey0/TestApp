@@ -1,0 +1,35 @@
+<h1>Signup</h1>
+
+<form action="" (ngSubmit)="signup()" #signupForm="ngForm">
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="userName" [(ngModel)]="userName" class="form-control">
+
+        <label for="name">Name</label>
+        <input type="text" name="name" [(ngModel)]="name" class="form-control">
+
+        <label for="email">Email</label>
+        <input type="text" name="email" [(ngModel)]="email" class="form-control">
+
+        <label for="password">Password</label>
+        <input type="password" name="passWord" [(ngModel)]="passWord" class="form-control">
+    </div>
+    <br><br>
+    <button type="submit" class="btn btn-primary">Signup</button>&nbsp;&nbsp;&nbsp;
+    <button type="reset" class="btn btn-secondary">Reset</button>
+</form>
+
+<hr>
+<table class="table table-bordered">
+    <tr>
+        <th>Username</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password<th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.userName}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.passWord}}</td>
+</table>
