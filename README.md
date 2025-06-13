@@ -1,5 +1,9 @@
 # TestApp
 
+JUST A TESTING APP I MADE IN ANGULAR....
+REST IS THE AUTO GENERATED README FILE....
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
 
 ## Development server
