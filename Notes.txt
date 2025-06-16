@@ -1,0 +1,62 @@
+Agular :
+
+App component will be the default index component
+
+A component contain HTML CSS ts
+spec.ts contain testing
+component.ts contain logical part
+
+command to generaate component : ng g c ( generate component ) COMPONENT_NAME
+
+Each component should be present in the app.component.ts file for importing it.
+It is necassary to import a component before using it /  rendering it
+
+DATA BINDING :
+
+1 : Interpolation : {{}} : define a variable in the component's TS file. use it in the {{}} in HTML
+2 : Event Binding : () eg : (click)="hello()" where the click is the type of event
+3 : Property Binding []
+4 : Two-way binding [{}] : When we want to post data from input / recive and render the data on browser.
+Two way binding :
+steps to submit data :
+1:  use FormModule and ComonModule in module's TS
+2:  use variables of type :any to accept the data,
+3:  in the form use [(ngModel)]="variableName"; to send the dat to perticular variable, each input field must have a name attribute with the same variable name
+4:  use (ngSubmit) event with the written curresponding function call. eg : (ngSubmit)="login()".
+
+# A variable declared in a components ts will exist in all the files related to that cmponent
+
+
+
+
+: ROUTING
+
+NAME
+NamingRouting :
+	we specify the routes in app.routes.ts
+	we can define the component name and its route/endpoint
+	we have to enable the <router-outlet> component to use the routes in our apps.
+
+DEFAULT :
+
+	when we dont define the endpoint in the routes array, we create an default page.
+	( INDEX ROUTE )
+PARAMETER :
+	
+	
+CHILD
+
+
+
+
+
+Service in Angular
+Just a class...?
+command - ng g s ..
+we can define a service which is a class that contain globally needed data or functions
+we can pass that service class's object to our ts file. then define a local function to call that class'es funcion on click or etc
+steps for serivce
+1 Create a service (use command )
+2 Write functions in the service class
+3 inject dependency to the components ts ( object of the service class )
+4 define local function that calls the service class function
