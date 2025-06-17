@@ -1,0 +1,16 @@
+<p>details works!</p>
+<h2>Cars List</h2>
+<ol>
+<button (click)="toggle()">toggle</button>
+<div *ngIf="isVal then carlist; else bikelist"></div>
+<ng-template #carlist>
+    <li *ngFor="let car of cars">
+        {{car}}
+    </li>
+</ng-template>
+<ng-template #bikelist>
+    <li *ngFor="let bike of bikes">
+        {{bike}}
+    </li>
+</ng-template>
+</ol>

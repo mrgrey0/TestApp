@@ -1,4 +1,17 @@
-<iframe width="560" height="315" [src]="vidURL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" [src]="vidURL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
 
-<button (click)="toggle()">Toggle Video<button>
+<button class="btn btn-primary" (click)="toggle()">Toggle Video</button>
+
+
+<hr>
+<div *ngIf="isVal then videoone;else videotwo"></div>
+
+<ng-template #videoone>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2VuFt7XS1IU?si=VgmyDEg2xHxGDS_P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</ng-template>
+<ng-template #videotwo>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y2F0wjoKEhg?si=MBCEAlLsyDRs92np" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</ng-template>

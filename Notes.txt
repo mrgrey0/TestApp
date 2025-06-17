@@ -25,7 +25,13 @@ steps to submit data :
 4:  use (ngSubmit) event with the written curresponding function call. eg : (ngSubmit)="login()".
 
 # A variable declared in a components ts will exist in all the files related to that cmponent
+PROPERY BINDING : bind html prooperties like src etc with square brackets and use variable name as the propery value.
 
+
+#In cases where a possible XSS is possible, we haave to sanitize the input. using the DOMsanitizer,
+
+# To use images. create an assets folder ad write its path to the angular.json file under the assets.
+	an restart of serve is needed to perform the asset udpdate.
 
 
 
@@ -60,3 +66,7 @@ steps for serivce
 2 Write functions in the service class
 3 inject dependency to the components ts ( object of the service class )
 4 define local function that calls the service class function
+
+
+
+NG TTEMPLATE
